@@ -7,7 +7,29 @@
   \*****************************/
 /***/ (() => {
 
-
+document.addEventListener('DOMContentLoaded', function () {
+  initLanguageSwitcher();
+});
+function initLanguageSwitcher() {
+  var languageSwitcher = document.getElementById('language-switcher');
+  var languageList = document.getElementById('language-list');
+  languageSwitcher.addEventListener('click', function () {
+    if (languageList.classList.contains('hidden')) {
+      languageList.classList.remove('hidden');
+      gsap.fromTo(languageList, {
+        opacity: 0
+      }, {
+        opacity: 1,
+        duration: 0.3
+      });
+    }
+  });
+  document.addEventListener('click', function (event) {
+    if (!languageSwitcher.contains(event.target)) {
+      languageList.classList.add('hidden');
+    }
+  });
+}
 
 /***/ }),
 

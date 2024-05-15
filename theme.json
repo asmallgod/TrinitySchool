@@ -10,7 +10,7 @@
         {
           "name": "Primary",
           "slug": "primary",
-          "color": "#0EA5E9"
+          "color": "#BE9555"
         },
         {
           "name": "Secondary",
@@ -26,6 +26,16 @@
           "name": "Light",
           "slug": "light",
           "color": "#F9FAFB"
+        },
+        {
+          "name": "ContentBg",
+          "slug": "content-bg",
+          "color": "#EEEBE5"
+        },
+        {
+          "name": "ThemeBlack",
+          "slug": "theme-black",
+          "color": "#25262A"
         }
       ]
     },

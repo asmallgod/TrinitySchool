@@ -38,6 +38,8 @@ function theme_enqueue_scripts()
 	$theme = wp_get_theme();
 
 	wp_enqueue_style('theme', theme_asset('css/app.css'), array(), $theme->get('Version'));
+	wp_enqueue_style('theme-custom', theme_asset('css/custom.css'), array(), $theme->get('Version'));
+	wp_enqueue_script('gsap', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', array(), '3.12.5');
 	wp_enqueue_script('theme', theme_asset('js/app.js'), array(), $theme->get('Version'));
 }
 

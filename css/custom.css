@@ -1,0 +1,29 @@
+:root {
+  --primary-color: #be9555;
+  --text-bold-color: #020407;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.menu-item {
+  margin-left: 10px;
+  color: var(--text-bold-color);
+  font-weight: 600;
+  font-size: 22px;
+  margin-left: 45px;
+  border-bottom: 2px solid transparent;
+}
+
+.menu-item:first-child {
+  margin-left: 0;
+}
+
+.menu-item:hover,
+.current-menu-item,
+.current-menu-ancestor {
+  color: var(--primary-color);
+  border-color: 2px var(--primary-color);
+  transition: all 0.1s;
+}
