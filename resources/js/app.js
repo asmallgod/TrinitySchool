@@ -8,7 +8,7 @@ function initLanguageSwitcher() {
   languageSwitcher.addEventListener('click', () => {
     if (languageList.classList.contains('hidden')) {
       languageList.classList.remove('hidden')
-      gsap.fromTo(languageList, { opacity: 0 }, { opacity: 1, duration: 0.3 })
+      gsap.fromTo(languageList, { opacity: 0 }, { opacity: 1, duration: 0.2 })
     }
   })
 

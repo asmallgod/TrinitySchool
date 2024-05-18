@@ -7,9 +7,9 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('poppins-semibold'); ?>>
+<body <?php body_class('poppins-semibold text-theme-black'); ?>>
 
-	<header class="flex items-center justify-between pt-11 pl-24 pr-32 pb-3">
+	<header class="flex items-center justify-between pt-11 pl-24 pr-32 pb-3 z-50">
 
 		<img class="w-[252px]" src="<?php the_field('header_logo', 'option') ?>" />
 
@@ -37,11 +37,11 @@
 				<div id="language-list" class="hidden">
 					<?php $array = trp_custom_language_switcher();  ?>
 					<!-- IMPORTANT! You need to have data-no-translation on the wrapper with the links or TranslatePress will automatically translate them in a secondary language. -->
-					<ul data-no-translation class="absolute left-1/2 -bottom-4 translate-y-full -translate-x-1/2 rounded-xl flex flex-col shadow-md">
+					<ul data-no-translation class="absolute z-50 left-1/2 -bottom-4 translate-y-full -translate-x-1/2 rounded-xl flex flex-col shadow-md">
 						<!--  // Check whether TranslatePress can run on the current path or not. If the path is excluded from translation, trp_allow_tp_to_run will be false -->
 						<?php if (apply_filters('trp_allow_tp_to_run', true)) { ?>
 							<?php foreach ($array as $name => $item) { ?>
-								<li class="w-40 h-11 flex items-center justify-center hover:bg-gray-50 transition-all">
+								<li class="w-40 h-11 flex items-center justify-center hover:bg-gray-50 transition-colors">
 									<a class="py-1 flex items-center justify-center" href="<?php echo $item['current_page_url'] ?>">
 										<img class="mr-2" src="<?php echo $item['flag_link'] ?>" />
 										<span><?php echo $item['language_name'] ?>
@@ -58,4 +58,4 @@
 
 	</header>
 
-	<main>
+	<main class="relative px-[5vw]">

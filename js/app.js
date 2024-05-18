@@ -20,7 +20,7 @@ function initLanguageSwitcher() {
         opacity: 0
       }, {
         opacity: 1,
-        duration: 0.3
+        duration: 0.2
       });
     }
   });
