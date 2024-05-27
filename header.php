@@ -16,7 +16,7 @@
 
 		<div class="flex items-center justify-start">
 			<?php wp_nav_menu(array(
-				'theme_location' => 'primary', // 指定要显示的菜单的位置
+				'menu' => 'HeaderMenu',
 				'container' => 'nav', // 使用<nav>元素作为容器
 				'container_class' => 'header_menu', // 定义容器元素的类名
 				'menu_class' => 'flex items-center', // 定义菜单元素的类名

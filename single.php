@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 	<div class="container my-8 mx-auto">
 
 	<?php if ( have_posts() ) : ?>

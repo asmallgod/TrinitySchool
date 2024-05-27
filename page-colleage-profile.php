@@ -2,7 +2,7 @@
 <h1><?php load_title_mark(get_the_title(), 200) ?></h1>
 <div class="relative mt-10">
   <img class="h-[623px] object-cover object-center" src="<?php echo get_field('banner')['image'] ?>" />
-  <div class="absolute z-0 px-12 py-14 left-1/2 -translate-x-1/2 -top-1/2 w-3/4 min-h-[600px] bg-white rounded-3xl shadow-2xl flex flex-wrap">
+  <div class="absolute z-0 px-12 py-14 left-1/2 -translate-x-1/2 top-0 -translate-y-36 w-3/4 min-h-[600px] bg-white rounded-3xl shadow-2xl flex flex-wrap">
     <div class="flex-1 px-8">
       <h2 class="text-[64px] leading-tight"><?php echo get_field('banner')['title'] ?></h2>
       <div class="*:py-3 mt-8">

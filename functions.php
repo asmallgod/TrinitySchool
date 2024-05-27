@@ -18,6 +18,9 @@ function theme_setup()
 		)
 	);
 
+	add_theme_support('custom-line-height');
+	add_theme_support('border');
+	add_theme_support('appearance-tools');
 	add_theme_support('custom-logo');
 	add_theme_support('post-thumbnails');
 

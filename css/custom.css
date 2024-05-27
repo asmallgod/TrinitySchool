@@ -3,9 +3,14 @@
   --text-bold-color: #020407;
 }
 
-li {
+ol li {
+  list-style: decimal;
+}
+
+ul li {
   list-style: disc;
 }
+
 
 .sub-menu {
   display: none;
@@ -57,11 +62,53 @@ li {
   background-color: #25262a;
 }
 
-.faculty_content h4{
+.faculty_content h4 {
   font-family: 'poppins-bold';
 }
 
-.faculty_content ul{
+.faculty_content ul {
   padding-left: 2em;
   font-family: 'poppins';
+}
+
+@media (max-width: 1100px) {
+  .card_wrapper {
+    flex-wrap: wrap !important;
+  }
+  .card_column {
+    flex: 100% 1 1 !important;
+  }
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.card_column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.border_top_bottom {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.custom_table thead {
+  border-bottom: 1.5px solid #000;
+}
+
+.custom_table th {
+  font-family: 'poppins-semibold';
+}
+
+.custom_table tr {
+  background-color: transparent !important;
+  border-bottom: 1.5px solid #000;
+  font-family: 'poppins';
+}
+
+.custom_table td,
+.custom_table th {
+  padding: 10px 0;
 }

@@ -4,7 +4,7 @@
   <h1><?php load_title_mark(get_the_title(), 270) ?></h1>
   <div class="absolute w-full left-1/2 -translate-x-1/2 top-[150px] px-[10%]"><?php load_section_header(get_field('title'), get_field('subtitle'), get_field('description')) ?></div>
   <section class="bg-content-bg box-border px-[10%] relative">
-    <div class="relative  -top-36">
+    <div class="relative  -top-20">
       <div class="mt-16 flex justify-between flex-wrap gap-y-8">
         <?php
         $faculty_items = get_field('items');

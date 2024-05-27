@@ -1,6 +1,26 @@
 {
   "version": 1,
   "settings": {
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "spacing": {
+      "blockGap": null,
+      "customSpacingSize": true,
+      "margin": true,
+      "padding": true,
+      "spacingScale": {
+        "operator": "*",
+        "increment": 1.5,
+        "steps": 7,
+        "mediumStep": 1.5,
+        "unit": "rem"
+      },
+      "spacingSizes": []
+    },
     "layout": {
       "contentSize": "960px",
       "wideSize": "1280px"

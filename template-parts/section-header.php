@@ -8,5 +8,5 @@ $description = get_query_var('description');
     <span class="poppins-bold text-5xl whitespace-nowrap"><?php echo $title ?></span>
     <span class="poppins text-primary text-[40px] whitespace-nowrap"><?php echo $subtitle ?></span>
   </h3>
-  <p class="w-[557px] jakarta-medium text-xl leading-[1.8]"><?php echo $description ?></p>
+  <p class="w-[557px] ml-8 jakarta-medium text-xl leading-[1.8]"><?php echo $description ?></p>
 </header>
